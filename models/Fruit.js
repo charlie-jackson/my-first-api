@@ -44,7 +44,7 @@ const fruits = require("../fruits.json")
                 throw Error("The fruit already exists.")
             } else {
                 newFruit["id"] = fruits.length + 1
-                fruits.push[newFruit]
+                fruits.push(newFruit)
                 return new Fruit(newFruit)
             }
         }

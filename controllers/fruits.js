@@ -22,6 +22,7 @@ const show = (req, res) => {
 const create = async (req, res) => {
     try {
         const newFruit = await Fruit.create(req.body)
+        console.log(req);
         res.status(201).send(newFruit)
     } catch (err) {
         res.status(409).send({error: err.message})
