@@ -9,7 +9,7 @@ const index = async (req, res) => {
     }
 }
 
-const show = (req, res) => {
+const show = async (req, res) => {
     const name = req.params.name.toLowerCase() // Handles user input
     try {
         const fruit = Fruit.show(name)
